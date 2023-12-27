@@ -1,0 +1,24 @@
+version: '3'
+services:
+  backend:
+    build:
+      dockerfile: Dockerfile_Back
+      args:
+        - GIT_BRANCH=${GIT_BRANCH:-main}
+    environment:
+      - GIT_BRANCH=${GIT_BRANCH:-main}
+    command: uvicorn main:app --host 0.0.0.0
+    ports:
+      - "${API_PORT}:8000"
+
+  frontend:
+    build:
+      dockerfile: Dockerfile_Front
+      args:
+        - GIT_BRANCH=${GIT_BRANCH:-main}
+    environment:
+      - GIT_BRANCH=${GIT_BRANCH:-main}
+    ports:
+      - "${FRONT_PORT}:3000"
+    depends_on:
+      - backend
