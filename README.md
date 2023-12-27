@@ -1,10 +1,10 @@
 # FastAPI_Manager_Erechenko
 ## Backend
 
-The project backend is made using Python.
-The database was created using SQLAlchemy.
-The framework for creating the RESTful API is FastAPI.
-The backend needs to be running for the frontend to work.
+Бэкэнд проекта выполнен на языке Python. 
+База данных создана с помощью SQLAlchemy. 
+Фреймворк для создания RESTful API - FastAPI. 
+Для работы фронтенда необходимо, чтобы бэкенд был запущен.
 
 ### Models
 
@@ -28,9 +28,9 @@ User:
 
 ## Frontend
 
-The project frontend is made using React.
-The styles of each component are modified in their respective .css.
-The skills chart uses the Chart.js library.
+Фронтенд проекта выполнен с использованием React.
+Стили каждого компонента изменяются в соответствующем .css.
+График навыков использует библиотеку Chart.js.
 
 ### Usage
 
