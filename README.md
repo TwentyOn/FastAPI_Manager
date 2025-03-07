@@ -6,9 +6,9 @@
 Фреймворк для создания RESTful API - FastAPI. 
 Для работы фронтенда необходимо, чтобы бэкенд был запущен.
 
-### Models
+### Модели
 
-There are 2 entities:
+Реализовано 2 модели:
 
 Admin:
 *   id
@@ -26,13 +26,13 @@ User:
 *   skills
 *   adminId (relation with Admin)
 
-## Frontend
+## Фронтенд
 
 Фронтенд проекта выполнен с использованием React.
 Стили каждого компонента изменяются в соответствующем .css.
 График навыков использует библиотеку Chart.js.
 
-### Usage
+### Использование
 
 ### `git clone https://github.com/Alex5067/FastAPIManager.git src`
 ### `cd src/docker`
